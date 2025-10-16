@@ -3,3 +3,12 @@
     font-optical-sizing: auto;
     text-transform: capitalize;
 }
+
+a {
+    color: #031930;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #410a5e;
+}
