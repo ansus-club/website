@@ -15,7 +15,7 @@ export const routes: Routes = [
     },
     {
         path: 'photos',
-        component: Photos
+        loadComponent: () => import('./photos/photos').then(p => p.Photos)
     },
     {
         path: 'privacy',
