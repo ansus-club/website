@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Contact } from './contact/contact';
 import { About } from './about/about';
-import { Privacy } from './privacy/privacy';
 
 export const routes: Routes = [
     {
@@ -20,6 +19,6 @@ export const routes: Routes = [
     },
     {
         path: 'privacy',
-        component: Privacy
+        loadComponent: () => import('./privacy/privacy').then(c => c.Privacy)
     }
 ];
