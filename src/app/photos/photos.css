@@ -1,5 +1,6 @@
 .carousel-inner .carousel-item {
-    height: 60vh;
+    /* was originally for a shorter 60vh height! nevertheless is useful for 100vh */
+    height: 100vh;
     /* Hides any overflowing content if the image is taller than the item */
     overflow: hidden;
 }
