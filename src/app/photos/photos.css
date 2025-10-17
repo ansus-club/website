@@ -1,0 +1,13 @@
+.carousel-inner .carousel-item {
+    height: 60vh;
+    /* Hides any overflowing content if the image is taller than the item */
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item img {
+    /* Ensures the image takes the full height of its parent item */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { Home } from './home/home';
 import { Contact } from './contact/contact';
-import { About } from './about/about';
+import { Home } from './home/home';
+import { Photos } from './photos/photos';
 
 export const routes: Routes = [
     {
@@ -14,8 +14,8 @@ export const routes: Routes = [
         component: Contact
     },
     {
-        path: 'about',
-        component: About
+        path: 'photos',
+        component: Photos
     },
     {
         path: 'privacy',

@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './home.css'
 })
 export class Home {
-  imageList: string[] = [
-    "images/carousel1.jpg",
-    "images/carousel2.jpg",
-    "images/carousel3.jpg",
-    "images/carousel4.jpg",
-    "images/carousel5.jpg"
-  ]
 }
