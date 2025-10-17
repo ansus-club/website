@@ -10,16 +10,18 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item me-3">
-                    <a class="nav-link inter-font fs-5" routerLink="/">home</a>
+                    <a class="nav-link inter-font fs-5" routerLink="/" routerLinkActive="active-route"
+                        [routerLinkActiveOptions]="{ exact: true }">home</a>
                 </li>
-                <li class="nav-item me-3">
+                <!-- <li class="nav-item me-3">
                     <a class="nav-link inter-font fs-5" routerLink="/articles">articles</a>
+                </li> -->
+                <li class="nav-item me-3">
+                    <a class="nav-link inter-font fs-5" routerLink="/about" routerLinkActive="active-route">about</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link inter-font fs-5" routerLink="/about">about</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link inter-font fs-5" routerLink="/contact">contact</a>
+                    <a class="nav-link inter-font fs-5" routerLink="/contact"
+                        routerLinkActive="active-route">contact</a>
                 </li>
             </ul>
         </div>
