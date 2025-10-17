@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Home {
   imageList: string[] = [
-    "images/1.png",
-    "images/2.png",
-    "images/3.png",
-    "images/4.png",
-    "images/5.png"
+    "images/carousel1.jpg",
+    "images/carousel2.jpg",
+    "images/carousel3.jpg",
+    "images/carousel4.jpg",
+    "images/carousel5.jpg"
   ]
 }
