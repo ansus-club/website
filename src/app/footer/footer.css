@@ -1,15 +1,10 @@
 .footer-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-optical-sizing: auto;
     text-transform: capitalize;
 }
 
 .nav-link {
     color: #031930;
     text-decoration: none;
-    font-family: "Inter", sans-serif;
-    /* fix for Chrome */
-    font-feature-settings: 'liga' 1, 'calt' 1;
     font-style: italic;
     font-size: 1.10rem;
 }
