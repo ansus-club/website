@@ -1,0 +1,12 @@
+.rounded {
+    border-radius: 50px;
+}
+
+a {
+    color: #031930;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8816c5;
+}
