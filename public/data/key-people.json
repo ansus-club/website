@@ -4,6 +4,7 @@
     "longDescription": null,
     "data": [
         {
+            "id": 1,
             "position": "Joint Secretary",
             "people": [
                 "Somnath Mitra",
@@ -11,6 +12,7 @@
             ]
         },
         {
+            "id": 2,
             "position": "President",
             "people": [
                 "Tapan Kayal"
@@ -23,12 +25,14 @@
             ]
         },
         {
+            "id": 3,
             "position": "Cashier",
             "people": [
                 "Badal Sarkar"
             ]
         },
         {
+            "id": 4,
             "position": "Game Secretary",
             "people": [
                 "Anutosh Siddhanta",
@@ -37,6 +41,7 @@
             ]
         },
         {
+            "id": 5,
             "position": "Working body committee",
             "people": [
                 "Goutam Saha",

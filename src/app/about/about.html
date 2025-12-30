@@ -9,29 +9,21 @@
             <div class="col col-lg-9">
 
                 <div class="row">
+                    @for (kp of keyPeople.data; track kp.id) {
                     <div class="col-sm-4 mb-3 mb-sm-0">
                         <div class="card">
                             <div class="card-body pb-0">
-                                <h5 class="card-title">Joint Secretary</h5>
+                                <h5 class="card-title">{{kp.position}}</h5>
                                 <div class="card-text">
-                                    <ul>
-                                        <li>Somnath Mitra</li>
-                                        <li>Bishu Roy</li>
-                                    </ul>
+                                    @for (person of kp.people; track person) {
+                                    <p>{{person}}</p>
+                                    }
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-sm-4 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body pb-0">
-                                <h5 class="card-title">President</h5>
-                                <div class="card-text">Tapan Kayal</div>
-                            </div>
-                        </div>
-                    </div> -->
+                    }
                 </div>
-
 
             </div>
         </div>
