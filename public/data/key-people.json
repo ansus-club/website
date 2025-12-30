@@ -1,0 +1,49 @@
+{
+    "key": "key-people",
+    "description": "Key people",
+    "longDescription": null,
+    "data": [
+        {
+            "position": "Joint Secretary",
+            "people": [
+                "Somnath Mitra",
+                "Bishu Roy"
+            ]
+        },
+        {
+            "position": "President",
+            "people": [
+                "Tapan Kayal"
+            ]
+        },
+        {
+            "position": "Vice-President",
+            "people": [
+                "Shankar Dev Bepari"
+            ]
+        },
+        {
+            "position": "Cashier",
+            "people": [
+                "Badal Sarkar"
+            ]
+        },
+        {
+            "position": "Game Secretary",
+            "people": [
+                "Anutosh Siddhanta",
+                "Chanchal Chanda",
+                "Pintu Ghosh"
+            ]
+        },
+        {
+            "position": "Working body committee",
+            "people": [
+                "Goutam Saha",
+                "Kushal",
+                "Supu",
+                "Sujay Das"
+            ]
+        }
+    ]
+}
