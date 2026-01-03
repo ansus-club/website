@@ -17,7 +17,8 @@ export class About {
   kpError = signal("");
   mError = signal("");
   keyPeople = signal<KeyPeople[] | undefined>(undefined);
-  members = signal<Members | undefined>(undefined);
+  members = signal<string[] | undefined>(undefined);
+  membersDesc = signal<string | undefined>(undefined);
 
   ngOnInit() {
     this.isKpLoading.set(true);
@@ -37,7 +38,8 @@ export class About {
 
     const mSub = this.peopleService.getMembers().subscribe({
       next: (members: Members) => {
-        this.members.set(members);
+        this.membersDesc.set(members.longDescription ?? undefined);
+        this.members.set(members.data);
       },
       error: (err: Error) => {
         this.mError.set(err.message);

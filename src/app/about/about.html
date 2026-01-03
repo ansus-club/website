@@ -7,39 +7,71 @@
         </div>
         <div class="row justify-content-md-center mt-3">
             <div class="col col-lg-9">
+                @if (isKpLoading() && !kpError()) {
+                <div class="d-flex align-items-center gap-2">
+                    <div class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></div>
+                    <span>Loading...</span>
+                </div>
+                }
+                @if (kpError()) {
+                <div class="col col-lg-9">
+                    <p>{{ kpError() }}</p>
+                </div>
+                }
 
-                <div class="row">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
                     @for (kp of keyPeople(); track kp.id) {
-                    <div class="col-sm-4 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body pb-0">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
                                 <h5 class="card-title">{{kp.position}}</h5>
-                                <div class="card-text">
+                                <ul class="list-unstyled card-text mb-0">
                                     @for (person of kp.people; track person) {
-                                    <p>{{person}}</p>
+                                    <li class="mb-1">{{ person }}</li>
                                     }
-                                </div>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     }
                 </div>
-
             </div>
         </div>
 
-        <div class="row justify-content-md-center mt-3">
+        <div class="row justify-content-md-center mt-5">
             <div class="col col-lg-9">
                 <div class="playfair-display-font fs-4">Members</div>
             </div>
         </div>
         <div class="row justify-content-md-center mt-3">
             <div class="col col-lg-9">
-                <p>There's nothing here right now. Check back in some time!</p>
+                @if (isMemLoading() && !mError()) {
+                <div class="d-flex align-items-center gap-2">
+                    <div class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></div>
+                    <span>Loading...</span>
+                </div>
+                }
+                @if (mError()) {
+                <div class="col col-lg-9">
+                    <p>{{ mError() }}</p>
+                </div>
+                }
+
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    @for (m of members(); track m) {
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                {{ m }}
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
             </div>
         </div>
 
-        <div class="row justify-content-md-center mt-3">
+        <div class="row justify-content-md-center mt-5">
             <div class="col col-lg-9">
                 <div class="playfair-display-font fs-4">Background</div>
             </div>
