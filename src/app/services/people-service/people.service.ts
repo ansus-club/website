@@ -11,7 +11,7 @@ export class PeopleService {
   private httpClient = inject(HttpClient);
 
   getKeyPeople() {
-    return this.httpClient.get<KeyPeopleResponse>('../../data/key-people.json').pipe(
+    return this.httpClient.get<KeyPeopleResponse>('data/key-people.json').pipe(
       catchError((err) => {
         console.log(err);
         return throwError(() => new Error("Something went wrong while fetching key people. Please, try again later."));
@@ -20,7 +20,7 @@ export class PeopleService {
   }
 
   getMembers() {
-    return this.httpClient.get<Members>('../../data/members.json').pipe(
+    return this.httpClient.get<Members>('data/members.json').pipe(
       // sort the members alphabetically ignoring case
       map((members) => ({
         ...members,
