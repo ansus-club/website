@@ -1,0 +1,5 @@
+.hero-img {
+    max-height: 520px;
+    object-fit: cover;
+    object-position: center;
+}
