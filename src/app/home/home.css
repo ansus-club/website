@@ -3,3 +3,40 @@
     object-fit: cover;
     object-position: center;
 }
+
+/* Who We Are cards */
+.about-card {
+    border-left: 4px solid transparent !important;
+    transition: box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10) !important;
+}
+
+.about-card-cultural {
+    background-color: #fdf6ee !important;
+    border-left-color: #c98b2e !important;
+}
+
+.about-card-cultural svg {
+    fill: #c98b2e !important;
+}
+
+.about-card-community {
+    background-color: #eef4fb !important;
+    border-left-color: #3a6fa8 !important;
+}
+
+.about-card-community svg {
+    fill: #3a6fa8 !important;
+}
+
+.about-card-impact {
+    background-color: #edf7f0 !important;
+    border-left-color: #2e8a50 !important;
+}
+
+.about-card-impact svg {
+    fill: #2e8a50 !important;
+}
