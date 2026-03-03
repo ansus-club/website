@@ -40,3 +40,12 @@
 .about-card-impact svg {
     fill: #2e8a50 !important;
 }
+
+a {
+    color: #8816c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

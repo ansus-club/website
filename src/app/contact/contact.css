@@ -1,3 +1,12 @@
 .rounded {
     border-radius: 50px;
 }
+
+a {
+    color: #8816c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
